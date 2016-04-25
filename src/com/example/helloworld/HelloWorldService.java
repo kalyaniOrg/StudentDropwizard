@@ -14,16 +14,16 @@ public class HelloWorldService extends Service<HelloWorldConfiguration> {
 
     @Override
     public void initialize(Bootstrap<HelloWorldConfiguration> bootstrap) {
-       // bootstrap.setName("hello-world");
+        bootstrap.setName("hello-world");
     }
 
     @Override
     public void run(HelloWorldConfiguration configuration,
                     Environment environment) {
-    	String template = configuration.getTemplate();
-        String defaultName = configuration.getDefaultName();
-        long id=configuration.getId();
-        String city=configuration.getCity();
+    	//String template = configuration.getTemplate();
+        //String defaultName = configuration.getDefaultName();
+        //long id=configuration.getId();
+        //String city=configuration.getCity();
        // environment.addResource(new HelloWorldResource(new StudentDao()));    
         environment.addResource(new HelloWorldResource());    
 
