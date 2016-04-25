@@ -1,0 +1,7 @@
+template: Hello, %s!
+defaultName: kalyani
+city: pune
+id: 123
+
+http:
+  port: 9001
