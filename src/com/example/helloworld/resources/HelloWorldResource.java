@@ -72,7 +72,7 @@ public class HelloWorldResource {
     */
     
     @GET
-    @Path("/showAll_Students")
+    @Path("/showAll")
     public Response sayHello() {
     		List<Student> users=AccessInfo.getUsers();    	
     		return Response.status(201).entity(users).build();  	
