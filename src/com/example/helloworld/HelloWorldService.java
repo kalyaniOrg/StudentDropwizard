@@ -6,6 +6,11 @@ import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.config.Bootstrap;
 import com.yammer.dropwizard.config.Environment;
 
+
+/**
+ * @author kalyanich
+ *
+ */
 public class HelloWorldService extends Service<HelloWorldConfiguration> {
     public static void main(String[] args) throws Exception {
     	//String s[]={"server","hello-world.yml"};
@@ -14,7 +19,7 @@ public class HelloWorldService extends Service<HelloWorldConfiguration> {
 
     @Override
     public void initialize(Bootstrap<HelloWorldConfiguration> bootstrap) {
-        //bootstrap.setName("hello-world");
+        bootstrap.setName("hello-world");
     }
 
     @Override
